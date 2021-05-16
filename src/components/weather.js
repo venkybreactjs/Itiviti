@@ -16,7 +16,7 @@ const Weather = () => {
             alert('Please Eneter City Name');
         }
         else {
-            const data = await fetch('http://api.weatherapi.com/v1/forecast.json?key=95d83eeffcf64b0ba4370557210501&q=Guntur&days=1')
+                const data = await fetch('http://api.weatherapi.com/v1/forecast.json?key=95d83eeffcf64b0ba4370557210501&q=Guntur&days=1')
                 //const data = await fetch('http://api.openweathermap.org/data/2.5/weayther?q=${form.city}&APPID=${APIKEY}')
                 .then(res => res.json())
                 .then(data => data);
